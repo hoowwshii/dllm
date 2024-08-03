@@ -34,3 +34,28 @@ a{
 .items ul>li{
     padding-right: 50px;
 }
+
+.container{
+    padding-left: 30px;
+}
+
+.artikel{
+    width: 75%;
+    height: 100px;
+    border: black 2px solid;
+    
+}
+
+.artikel div{
+    
+    height: 100%;
+}
+.image{
+    background-color: blue;
+    width: 250px;
+    height: 100%;
+}
+.artikel-content{
+    display: flex;
+    justify-content: space-between;
+}
