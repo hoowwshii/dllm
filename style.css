@@ -2,11 +2,9 @@
     --body-bg-color: #D7EFFE;
 }
 
-
 body{
-margin: 0;
+    margin: 0;
 }
-
 
 .navbar{
     display: flex;
@@ -48,14 +46,16 @@ a{
 }
 
 .container{
-    padding-left: 30px;
+    padding-left: 15vw !important;
+    padding-top: 20px;
 }
 
 .artikel{
     width: 75%; 
     background-color: lightgrey;
     height: 100px;
-    margin: 15px;
+    margin-bottom: 15px;
+
     
 }
 
@@ -63,7 +63,6 @@ a{
     height: 100%;
 }
 .image{
-    background-color: blue;
     width: auto;
     height: 100%;
 }
@@ -77,10 +76,35 @@ img{
 }
 
 .container article{
-    width: 45%;
+    width: 45% !important;
+   font-family: "Playfair Display", serif;
+    
 }
 article > p{
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
+}
+.recommendation{
+    width: 400px;
+    margin-left: 10vw;
+    height: 80%;
+    margin-top: 50px;
+}
+article > h1 {
+    text-align: center;
+    font-weight: 600;
+}
+article > h6{
+    text-align: center;
+    font-weight: 300;
+    
+}
+
+.judul-artikel{
+    display: grid;
+    align-items: center;
+}
+.judul-artikel p{
+    margin: 0 !important;
 }
