@@ -48,6 +48,7 @@ a{
 .container{
     padding-left: 15vw !important;
     padding-top: 20px;
+    margin-bottom: 500px;
 }
 
 .artikel{
@@ -86,6 +87,8 @@ article > p{
     line-height: 1.5;
 }
 .recommendation{
+    border-left: 2px pink solid;
+    padding-left: 20px;
     width: 400px;
     margin-left: 10vw;
     height: 80%;
