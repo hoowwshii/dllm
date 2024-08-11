@@ -1,5 +1,8 @@
 :root{
-    --body-bg-color: #D7EFFE;
+    --navbar-bg-color: #34495E;
+    --font-color: #FFFFFF;
+    --rec-box-bg: #D3E9FF;
+    --rec-box-txt: #2C3E50;
 }
 
 body{
@@ -10,7 +13,8 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    background-color: var(--navbar-bg-color);
+    color: var(--font-color);
 }
 
 .title{
@@ -22,31 +26,33 @@ body{
     border-bottom: var(--body-bg-color) 3px solid;
     transition: all 160ms ease-in-out;
 }
-
 a{
     text-decoration: none;
     color: black;
 }
-
+.navbar a{
+    color: var(--font-color);
+}
+.items{
+    height: min-content;
+}
 .items ul{
     display: flex;
     justify-content: center;
     align-items: center;
     list-style-type: none;
-    
 }
 .items ul>li{
     padding-top: 0px !important;
     padding-bottom: 5px !important;
     padding: 20px;
 }
-.navbar-item:hover{
-    border-bottom: var(--body-bg-color) 3px solid;
-    transition: all 160ms ease-in-out;
+#menuList{
+    align-items: center;
+    margin: 0;
 }
-
 .container{
-    padding-left: 15vw !important;
+    padding-left: 10vw;
     padding-top: 20px;
     margin-bottom: 500px;
 }
@@ -56,7 +62,7 @@ a{
     background-color: lightgrey;
     height: 100px;
     margin-bottom: 15px;
-
+    border-radius: 12px;
     
 }
 
@@ -74,12 +80,18 @@ img{
 .artikel-content{
     display: flex;
     justify-content: space-between;
+    background-color: var(--rec-box-bg);
 }
-
+.artikel-content p{
+    color: var(--rec-box-txt);
+}
 .container article{
-    width: 45% !important;
+    width: 45%;
    font-family: "Playfair Display", serif;
     
+}
+.temp-display-flex{
+    display: flex;
 }
 article > p{
     font-size: 16px;
@@ -94,6 +106,9 @@ article > p{
     height: 80%;
     margin-top: 50px;
 }
+.recommendation .artikel{
+    width: 100%;
+}
 article > h1 {
     text-align: center;
     font-weight: 600;
@@ -101,13 +116,38 @@ article > h1 {
 article > h6{
     text-align: center;
     font-weight: 300;
-    
-}
 
+}
 .judul-artikel{
     display: grid;
     align-items: center;
 }
 .judul-artikel p{
     margin: 0 !important;
+    padding-left: 15px;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 900px) {
+    .container{
+        padding: 20px;
+    }
+    .temp-display-flex{
+        display: block;
+    }
+    .artikel{
+        width: 100%;
+    }
+    .recommendation{
+        margin: 0;
+        padding-left: 0;
+        border-left: none;
+        border-top: 2px pink solid;
+        width: 100%;
+        text-align: center;
+    }
+    article{
+        width: 95% !important;
+    }
 }
