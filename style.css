@@ -56,7 +56,9 @@ a{
     padding-top: 20px;
     margin-bottom: 500px;
 }
-
+.container h1{
+    text-align: center;
+}
 .artikel{
     width: 75%; 
     background-color: lightgrey;
@@ -88,7 +90,6 @@ img{
 .container article{
     width: 45%;
    font-family: "Playfair Display", serif;
-    
 }
 .temp-display-flex{
     display: flex;
@@ -99,7 +100,7 @@ article > p{
     line-height: 1.5;
 }
 .recommendation{
-    border-left: 2px pink solid;
+    border-left: 3px pink solid;
     padding-left: 20px;
     width: 400px;
     margin-left: 10vw;
@@ -125,8 +126,11 @@ article > h6{
 .judul-artikel p{
     margin: 0 !important;
     padding-left: 15px;
+    font-weight: 500;
 }
-
+h4{
+    font-weight: 600;
+}
 /* Responsive */
 
 @media only screen and (max-width: 900px) {
@@ -143,7 +147,7 @@ article > h6{
         margin: 0;
         padding-left: 0;
         border-left: none;
-        border-top: 2px pink solid;
+        border-top: 3px pink solid;
         width: 100%;
         text-align: center;
     }
