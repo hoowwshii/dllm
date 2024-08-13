@@ -74,13 +74,11 @@ a{
 .image{
     width: 175px;
     height: 100%;
-    display: grid;
-    align-items: center;
 }
 img{
     padding-right: 2px;
     width: inherit;
-    height: 95%;
+    height: 100%;
 }
 .artikel-content{
     display: flex;
